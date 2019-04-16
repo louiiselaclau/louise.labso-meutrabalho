@@ -1,39 +1,41 @@
-Aluno: (Nome Aluno) matricula:(000000000000)
+Aluno: (Louise Felix Laclau) matricula:(0050014910)
 Prova de Laboratorio de Sistemas Operacionais
 Professor: Alex Salgado
-1o. Semestre de 2019   Turno: Noite            Trabalho (valo 1,5 pontos)
---------------------------------------------------------------------------
+1o. Semestre de 2019   Turno: Noite            Trabalho (valor 1,5 pontos)
+-----------------------------------------------------------------------
 Com relação aos comandos do SO Linux, responda as perguntas abaixo:
 
 
 0 - Após o comando clone, vá para a pasta seunome.labso.meutrabalho (esta será a pasta principal da prova)
 
 1. Crie 3 pastas com nomes de pasta1, pasta2 e pasta3
-(Cole aqui o(s) comandos utilizados)
+(mkdir pasta1 pasta2 pasta3)
 
 2. Liste todo o conteúdo da pasta home e direcione a saída para um arquivo chamado access.log
-(Cole aqui o(s) comandos utilizados)
+(ls -R >access.log)
 
 3. Qual o comando para mostrar as últimas 4 linhas do arquivo access.log?
-(Cole aqui o(s) comandos utilizados)
+(tail -n 4 access.log)
 
 
 4. Usando apenas uma linha de comando, crie 3 arquivos em branco que comecem com seu nome e termina com 
 uma sequencia 1, 2 e 3. Ex.: alex1.txt, alex2.txt, alex3.txt. Que comando você utilizou?
-(Cole aqui o(s) comandos utilizados)
+(touch louise{1..3}.txt)
 
 
 
 5. Copie os 3 arquivos criados anteriormente para a pasta2
 
+cp ../louise.labso-meutrabalho/louise1.txt louise2.txt louise3.txt ./pasta2
+
 
 6. A partir de sua pasta original(item 0), usando o comando find do linux, 
 diga quantos diretórios existem cujo nome começa com "pasta"? 
-Resposta1 (comando linux usado): 
-Resposta2 (numero de diretórios encontrados) :
+Resposta1 (find -type d -name pasta*): 
+Resposta2 (3 pastas) :
 
 7.listar o conteúdo de seu diretório e direcionar a saída para o primeiro arquivo do item 4
-(Cole aqui o(s) comandos utilizados)
+(ls -R>louise1.txt)
 
 
 8.Mostre o conteudo do arquivo ultimocomando.txt e siga as instruções dele
